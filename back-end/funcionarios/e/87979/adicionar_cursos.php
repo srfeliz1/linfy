@@ -78,7 +78,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </body>
 </html>
 
-
-header("Location: http://localhost/linfy/index.php");
-exit();
-
+<!-- adicionei o header no local devido -->
