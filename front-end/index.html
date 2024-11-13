@@ -1,14 +1,3 @@
-<?php
-	if (!empty($_SERVER['HTTPS']) && ('on' == $_SERVER['HTTPS'])) {
-		$uri = 'https://';
-	} else {
-		$uri = 'http://';
-	}
-	$uri .= $_SERVER['HTTP_HOST'];
-	header('Location: '.$uri.'/dashboard/');
-	exit;
-?>
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -163,12 +152,6 @@
         <span id="priceDisplay">Até R$500</span>
       </div>
     </div>
-
-	<div class="login">
-		<div class="button-login">
-			<button type="submit"></button>
-		</div>
-	</div>
   </header>
 
   <main>
@@ -244,5 +227,3 @@
   </script>
 </body>
 </html>
-
-
