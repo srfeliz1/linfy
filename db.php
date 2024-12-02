@@ -4,7 +4,6 @@ $host = 'localhost';       // Endereço do servidor do banco de dados
 $dbname = 'databaselinfy'; // Nome do banco de dados
 $user = 'root';         // Nome de usuário do banco de dados
 $pass = '';           // Senha do usuário do banco de dados
-
 // Criar conexão com o banco de dados usando PDO
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $user, $pass);
@@ -16,4 +15,3 @@ try {
     echo "Erro na conexão: " . $e->getMessage();
 }
 ?>
-
